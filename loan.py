@@ -15,8 +15,10 @@ def home():
 def predict(): 
     return "I predict your loan approval status."
 
-@app.route('/make_predict', methods = ['POST'])
+@app.route('/make_predict', methods = ['GET', 'POST'])
 def make_prediction():
+    if request.method == 'GET':
+        return "Please send a POST request with JSON data."
     data = request.get_json()
     # print(data)
 
