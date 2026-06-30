@@ -9,7 +9,7 @@ with open('classifier.pkl', 'rb') as f:
 
 @app.route('/', methods = ['GET'])
 def home(): 
-    return "Welcome to the Loan Management System!!!"
+    return "Welcome to the Loan Management APP!!!"
      
 @app.route('/predict', methods = ['GET'])
 def predict(): 
