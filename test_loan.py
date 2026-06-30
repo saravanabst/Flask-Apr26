@@ -8,7 +8,7 @@ def client():
 def test_home(client):
     response = client.get('/')
     assert response.status_code == 200
-    assert response.text == "Welcome to the Loan Management System!"
+    assert response.text == "Welcome to the Loan Management System!!!"
 
 
 def test_predict_million(client):
